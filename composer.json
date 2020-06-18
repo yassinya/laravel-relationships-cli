@@ -1,0 +1,16 @@
+{
+    "name": "yassinya/laravel-relation-cli",
+    "description": "Quickly define relationships between eloquent models with a simple command",
+    "type": "library",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Yassin Youssouf",
+            "email": "yassinrsc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/helpers": "^1.0@dev"
+    }
+}

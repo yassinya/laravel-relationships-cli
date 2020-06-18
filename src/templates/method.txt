@@ -1,0 +1,5 @@
+    
+    public function {{name}}()
+    {
+        return $this->{{relation-method}}({{args}});
+    }
