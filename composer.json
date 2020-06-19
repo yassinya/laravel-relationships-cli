@@ -12,5 +12,12 @@
     "minimum-stability": "dev",
     "require": {
         "laravel/helpers": "^1.0@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yassinya\\Relation\\RelationServiceProvider"
+            ]
+        }
     }
 }
