@@ -13,6 +13,11 @@
     "require": {
         "laravel/helpers": "^1.0@dev"
     },
+    "autoload": {
+        "psr-4": {
+            "Yassinya\\Relation\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
