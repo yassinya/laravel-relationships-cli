@@ -2,6 +2,20 @@ This package allows you to define relationships between your models directly fro
 
 Most of the Laravel relationships are supported, including polymorphic ones.
 
+# Installation
+
+This package can be installed via composer:
+```
+composer require yassinya/laravel-relation-cli
+```
+
+The service provider will be automatically registered
+
+Publish the config file with:
+```
+php artisan vendor:publish --provider="Yassinya\Relation\RelationServiceProvider" --tag="config"
+```
+
 # Usage
 To define a relationship you'll need to use the relation command which expects 3 required arguments:
 1. The main model's name
