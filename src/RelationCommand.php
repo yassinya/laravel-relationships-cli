@@ -83,7 +83,7 @@ class RelationCommand extends Command
 
         $method = $this->buildMethod($this->getMethodName($inverse), $inverse);
 
-        $modelFile = base_path().'/App/' . ucfirst($model) .'.php';
+        $modelFile = base_path().'/' . $this->getModelsOutputPath() . '/' . ucfirst($model) .'.php';
         $content = $this->getModelContent($modelFile, $model);
         $content = $this->insertMethod($content, $method);
 
@@ -126,7 +126,16 @@ class RelationCommand extends Command
      */
     private function getNamespace()
     {
-        return 'App';
+        return config('relation.namespace');
+    }
+
+    /**
+     * Get models output path
+     * @return string
+     */
+    private function getModelsOutputPath()
+    {
+        return config('relation.models-path');
     }
 
     /**
