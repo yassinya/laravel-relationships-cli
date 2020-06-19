@@ -36,8 +36,8 @@ php artisan relation User m2m Product
 ```
 
 ## Polymorphic Relationships
-To define a polymorphic Relationship just add the **-p** or **--polymorphic** option. For instance
-to define a 121 polymorphic Relationship between Post and Image 
+To define a polymorphic relationship just add the **-p** or **--polymorphic** option. For instance
+to define a 121 polymorphic relationship between Post and Image 
 
 ```
 php artisan relation Post 121 Image -p
