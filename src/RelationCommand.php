@@ -2,8 +2,6 @@
 
 namespace Yassinya\Relation;
 
-use App\User;
-use App\DripEmailer;
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
