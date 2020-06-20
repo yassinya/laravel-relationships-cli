@@ -3,3 +3,4 @@
     {
         return $this->{{relation-method}}({{args}});
     }
+    
