@@ -67,6 +67,12 @@ class RelationCommand extends Command
         $this->mainModel = ucfirst($this->argument('main-model'));
         $this->targetModel = ucfirst($this->argument('target-model'));
 
+        // Make sure that the relationship type is valid
+        if(! $this->getRelation()){
+            $this->error('Invalid relationship type. The relationship type should be 121, 12m or m2m');
+            return;
+        }
+
         $this->defineRelation();
         $this->defineRelation(true);
 
